@@ -1,0 +1,172 @@
+~ /
+desktop.ini<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoomFinder — номера отелей по странам</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">RF</div>
+        <div>
+          <h1>RoomFinder</h1>
+          <p>Лучшие номера отелей в разных странах</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#hotels">Номера</a>
+        <a href="#countries">Страны</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Путешествуйте с комфортом</span>
+          <h2>Номера отелей по лучшим направлениям мира</h2>
+          <p>Сравнивайте предложения, выбирайте страну и бронируйте номера онлайн. У нас есть варианты для отдыха, командировок и семейных поездок.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#hotels">Посмотреть номера</a>
+            <a class="button secondary" href="#contact">Связаться</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <h3>Города для билетов</h3>
+            <p>Выберите город, и в новом окне откроются красивые виды и интересные места.</p>
+          </div>
+          <div class="destination-list">
+            <a class="destination-card" href="city.html?city=paris" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/paris.svg');"></div>
+              <div class="destination-info">
+                <strong>Париж</strong>
+                <span>Франция</span>
+              </div>
+            </a>
+            <a class="destination-card" href="city.html?city=dubai" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/dubai.svg');"></div>
+              <div class="destination-info">
+                <strong>Дубай</strong>
+                <span>ОАЭ</span>
+              </div>
+            </a>
+            <a class="destination-card" href="city.html?city=bangkok" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/bangkok.svg');"></div>
+              <div class="destination-info">
+                <strong>Бангкок</strong>
+                <span>Таиланд</span>
+              </div>
+            </a>
+            <a class="destination-card" href="city.html?city=seville" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/seville.svg');"></div>
+              <div class="destination-info">
+                <strong>Севилья</strong>
+                <span>Испания</span>
+              </div>
+            </a>
+            <a class="destination-card" href="city.html?city=rome" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/rome.svg');"></div>
+              <div class="destination-info">
+                <strong>Рим</strong>
+                <span>Италия</span>
+              </div>
+            </a>
+            <a class="destination-card" href="city.html?city=tokyo" target="_blank" rel="noopener">
+              <div class="destination-image" style="background-image: url('./images/tokyo.svg');"></div>
+              <div class="destination-info">
+                <strong>Токио</strong>
+                <span>Япония</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="countries" class="country-filter section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Выберите страну</span>
+          <h3>Номера отелей по популярным направлениям</h3>
+        </div>
+        <div class="country-buttons" id="countryButtons"></div>
+      </div>
+    </section>
+
+    <section id="hotels" class="hotel-list section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Рекомендуем</span>
+          <h3>Номера, которые вы можете забронировать прямо сейчас</h3>
+        </div>
+        <div class="cards-grid" id="hotelCards"></div>
+      </div>
+    </section>
+
+    <section class="benefits section-block">
+      <div class="container benefits-grid">
+        <div class="benefit-card">
+          <h4>Гарантия лучшей цены</h4>
+          <p>Мы подбираем предложения по выгодной цене и прозрачным условиям бронирования.</p>
+        </div>
+        <div class="benefit-card">
+          <h4>Поддержка 24/7</h4>
+          <p>Наши менеджеры помогут выбрать номер и оформят бронь за вас.</p>
+        </div>
+        <div class="benefit-card">
+          <h4>Фильтрация по стране</h4>
+          <p>Легко выбрать отель в Европе, Азии или на море.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-block">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Готовы начать</span>
+          <h3>Свяжитесь с нами для персонального подбора номера</h3>
+          <p>Оставьте заявку, и мы подберём лучшие варианты по выбранной стране и бюджету.</p>
+        </div>
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/zerofrankss@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта RoomFinder" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Ваше имя" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="example@mail.com" required />
+          </label>
+          <label>
+            Страна или город
+            <input type="text" name="location" placeholder="Париж, Дубай, Бангкок" required />
+          </label>
+          <button type="submit" class="button primary">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 RoomFinder — продажа номеров отелей по разным странам</p>
+      <p>Разработка простого сайта для бронирования номеров</p>
+    </div>
+  </footer>
+
+  <script defer src="./hotels.js"></script>
+  <script defer src="./script.js"></script>
+</body>
+</html>

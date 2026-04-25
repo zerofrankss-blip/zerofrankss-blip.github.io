@@ -1,0 +1,19 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#b)"/>
+  <g fill="#ffffff" opacity="0.95">
+    <ellipse cx="400" cy="520" rx="330" ry="180"/>
+    <ellipse cx="650" cy="580" rx="430" ry="200"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 460 Q360 280 440 520 Q520 260 620 500 Q700 280 860 520"/>
+    <path d="M260 540 Q360 380 440 600 Q520 360 620 640 Q700 380 860 620" opacity="0.7"/>
+  </g>
+  <text x="50%" y="70%" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="90" fill="#ffffff" font-weight="800">Бангкок</text>
+  <text x="50%" y="80%" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="40" fill="#dbeafe">Город храмов, уличной еды и тропической атмосферы</text>
+</svg>

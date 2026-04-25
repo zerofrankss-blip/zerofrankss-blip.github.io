@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoomFinder — Детали номера</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">RF</div>
+        <div>
+          <h1>RoomFinder</h1>
+          <p>Детали номера и отзывы</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="index.html#hotels">Номера</a>
+        <a href="index.html#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hotel-detail-hero section-block">
+      <div class="container hotel-detail-grid">
+        <div class="hotel-detail-content">
+          <span class="eyebrow">Подробности номера</span>
+          <h1 id="hotelTitle">Загрузка...</h1>
+          <p id="hotelSubtitle" class="hotel-detail-subtitle">Здесь появится описание номера и вид на город.</p>
+          <div class="hotel-detail-meta">
+            <span id="hotelLocation"></span>
+            <span id="hotelGuests"></span>
+            <span id="hotelPrice"></span>
+            <span id="hotelRating"></span>
+          </div>
+          <p id="hotelDescription"></p>
+          <div class="hero-actions hotel-detail-actions">
+            <a class="button primary" id="hotelBookBtn" href="mailto:zerofrankss@gmail.com">Написать нам</a>
+            <a class="button secondary" href="index.html">Назад к списку</a>
+          </div>
+        </div>
+        <div class="hotel-detail-image" id="hotelHeroImage"></div>
+      </div>
+    </section>
+
+    <section class="hotel-gallery section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Фотогалерея</span>
+          <h3>Дополнительные фото номера и окрестностей</h3>
+        </div>
+        <div class="hotel-gallery-grid" id="hotelGallery"></div>
+      </div>
+    </section>
+
+    <section class="hotel-details section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Описание</span>
+          <h3>Точный обзор номера</h3>
+        </div>
+        <p id="hotelLongDescription"></p>
+      </div>
+    </section>
+
+    <section class="hotel-reviews section-block">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Отзывы</span>
+          <h3>Что говорят гости</h3>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-list" id="reviewList"></div>
+          <aside class="review-form-card">
+            <h4>Оставьте отзыв</h4>
+            <form id="reviewForm" class="review-form">
+              <label>
+                Ваше имя
+                <input type="text" name="reviewer" placeholder="Введите имя" required />
+              </label>
+              <label>
+                E-mail
+                <input type="email" name="email" placeholder="example@mail.com" required />
+              </label>
+              <label>
+                Оценка
+                <select name="rating" required>
+                  <option value="">Выберите оценку</option>
+                  <option value="5">5 — Отлично</option>
+                  <option value="4">4 — Очень хорошо</option>
+                  <option value="3">3 — Хорошо</option>
+                  <option value="2">2 — Удовлетворительно</option>
+                  <option value="1">1 — Плохо</option>
+                </select>
+              </label>
+              <label>
+                Отзыв
+                <textarea name="text" rows="5" placeholder="Ваш отзыв" required></textarea>
+              </label>
+              <button type="submit" class="button primary">Отправить отзыв</button>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 RoomFinder — детальное описание номеров</p>
+      <p>Отзывы и галерея.</p>
+    </div>
+  </footer>
+
+  <script defer src="./hotels.js"></script>
+  <script defer src="./hotel.js"></script>
+</body>
+</html>

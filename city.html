@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Город — RoomFinder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">RF</div>
+        <div>
+          <h1>RoomFinder</h1>
+          <p>Красивые виды городов и лучшие маршруты</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Главная</a>
+        <a href="index.html#hotels">Номера</a>
+        <a href="index.html#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="city-page">
+    <div class="container">
+      <a class="back-link" href="index.html">← Вернуться на сайт</a>
+      <section class="city-hero">
+        <h1 id="cityTitle">Город</h1>
+        <div class="city-meta">
+          <p id="cityDescription">Выберите город на главной странице, чтобы посмотреть красивые виды.</p>
+          <p>Листайте галерею ниже, чтобы увидеть достопримечательности и атмосферу.</p>
+        </div>
+      </section>
+
+      <section class="city-gallery" id="cityGallery"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 RoomFinder — просмотр городов</p>
+      <p>Красивые виды и вдохновение для путешествий</p>
+    </div>
+  </footer>
+
+  <script defer src="city.js"></script>
+</body>
+</html>
