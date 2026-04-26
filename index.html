@@ -39,103 +39,33 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">Путешествуйте с комфортом</span>
-          <h2>Номера отелей по лучшим направлениям мира</h2>
-          <p>Сравнивайте предложения, выбирайте страну и бронируйте номера онлайн. У нас есть варианты для отдыха, командировок и семейных поездок.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#hotels">Посмотреть номера</a>
-            <a class="button secondary" href="#contact">Связаться</a>
+          <span class="eyebrow">Авиабилеты</span>
+          <h2>Поиск и бронирование авиабилетов</h2>
+          <p>Найдите лучшие цены на авиабилеты среди сотен авиакомпаний и агентств.</p>
+          <div class="search-widget" style="margin-top: 1.5rem;">
+            <script async src="https://tpemb.com/content?currency=rub&trs=522712&shmarker=722550&show_hotels=true&powered_by=true&locale=ru&searchUrl=www.aviasales.com%2Fsearch&primary_override=%2314AA21ff&color_button=%23346CC5ff&color_icons=%23199FDEff&dark=%2302060Bff&light=%23F4F4F4ff&secondary=%23DEE3E6ff&special=%23CACECFff&color_focused=%232D72AEff&border_radius=11&no_labels=&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="hero-card-header">
-            <h3>Города для билетов</h3>
-            <p>Выберите город, и в новом окне откроются красивые виды и интересные места.</p>
-          </div>
-          <div class="destination-list">
-            <a class="destination-card" href="city.html?city=paris" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/paris.svg');"></div>
-              <div class="destination-info">
-                <strong>Париж</strong>
-                <span>Франция</span>
-              </div>
-            </a>
-            <a class="destination-card" href="city.html?city=dubai" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/dubai.svg');"></div>
-              <div class="destination-info">
-                <strong>Дубай</strong>
-                <span>ОАЭ</span>
-              </div>
-            </a>
-            <a class="destination-card" href="city.html?city=bangkok" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/bangkok.svg');"></div>
-              <div class="destination-info">
-                <strong>Бангкок</strong>
-                <span>Таиланд</span>
-              </div>
-            </a>
-            <a class="destination-card" href="city.html?city=seville" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/seville.svg');"></div>
-              <div class="destination-info">
-                <strong>Севилья</strong>
-                <span>Испания</span>
-              </div>
-            </a>
-            <a class="destination-card" href="city.html?city=rome" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/rome.svg');"></div>
-              <div class="destination-info">
-                <strong>Рим</strong>
-                <span>Италия</span>
-              </div>
-            </a>
-            <a class="destination-card" href="city.html?city=tokyo" target="_blank" rel="noopener">
-              <div class="destination-image" style="background-image: url('./images/tokyo.svg');"></div>
-              <div class="destination-info">
-                <strong>Токио</strong>
-                <span>Япония</span>
-              </div>
-            </a>
-          </div>
+        <div class="scroll-to-hotels">
+          <a href="#hotels" class="scroll-button">
+            <span>Перейти к отелям</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="countries" class="country-filter section-block">
+    <section id="hotels" class="hotels-section section-block">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Выберите страну</span>
-          <h3>Номера отелей по популярным направлениям</h3>
+          <span class="eyebrow">Отели</span>
+          <h3>Популярные отели от Яндекс Путешествий</h3>
+          <p>Сравните цены и выберите лучший вариант для вашего отдыха</p>
         </div>
-        <div class="country-buttons" id="countryButtons"></div>
-      </div>
-    </section>
-
-    <section id="hotels" class="hotel-list section-block">
-      <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Рекомендуем</span>
-          <h3>Номера, которые вы можете забронировать прямо сейчас</h3>
-        </div>
-        <div class="cards-grid" id="hotelCards"></div>
-      </div>
-    </section>
-
-    <section class="benefits section-block">
-      <div class="container benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon">💎</div>
-          <h4>Гарантия лучшей цены</h4>
-          <p>Мы подбираем предложения по выгодной цене и прозрачным условиям бронирования.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">⚡</div>
-          <h4>Поддержка 24/7</h4>
-          <p>Наши менеджеры помогут выбрать номер и оформят бронь за вас.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🧭</div>
-          <h4>Фильтрация по стране</h4>
-          <p>Легко выбрать отель в Европе, Азии или на море.</p>
+        <div class="hotels-widget">
+          <script async src="https://tpemb.com/content?trs=522712&shmarker=722550&city=1&sorting=popular&theme=light&powered_by=true&campaign_id=193&promo_id=8582" charset="utf-8"></script>
         </div>
       </div>
     </section>
@@ -143,28 +73,14 @@
     <section id="contact" class="contact section-block">
       <div class="container contact-grid">
         <div>
-          <span class="eyebrow">Готовы начать</span>
-          <h3>Свяжитесь с нами для персонального подбора номера</h3>
-          <p>Оставьте заявку, и мы подберём лучшие варианты по выбранной стране и бюджету.</p>
+          <span class="eyebrow">Поддержка 24/7</span>
+          <h3>Нужна помощь? 💬</h3>
+          <p>Выберите, с каким вопросом вам нужна помощь:</p>
         </div>
-        <form id="contactForm" class="contact-form" action="https://formsubmit.co/zerofrankss@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Новая заявка с сайта RoomFinder" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <label>
-            Имя
-            <input type="text" name="name" placeholder="Ваше имя" required />
-          </label>
-          <label>
-            E-mail
-            <input type="email" name="email" placeholder="example@mail.com" required />
-          </label>
-          <label>
-            Страна или город
-            <input type="text" name="location" placeholder="Париж, Дубай, Бангкок" required />
-          </label>
-          <button type="submit" class="button primary">Отправить заявку</button>
-        </form>
+        <div class="support-buttons">
+          <a href="https://aviasales.ru" target="_blank" rel="noopener" class="button primary">Поддержка авиабилетов</a>
+          <a href="https://yandex.ru" target="_blank" rel="noopener" class="button secondary">Поддержка отелей</a>
+        </div>
       </div>
     </section>
   </main>
